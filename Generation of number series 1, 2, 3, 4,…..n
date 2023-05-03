@@ -1,18 +1,13 @@
 #include <stdio.h>
-
-void generateSeries(int n) {
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", i);
-    }
-}
-
-int main() {
+int main() 
+{
     int n;
     printf("Enter the value of n: ");
     scanf("%d", &n);
-    
     printf("Number series: ");
-    generateSeries(n);
-    
+    for (int i = 1; i <= n; i++) 
+	{
+        printf("%d ", i);
+    }
     return 0;
 }
